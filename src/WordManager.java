@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class WordManager {
 
     Scanner s = new Scanner(System.in);
+
     WordCRUD wordCRUD;
 
 
@@ -38,6 +39,10 @@ public class WordManager {
             else if (menu == 1) {
                 wordCRUD.ListAll();
             }
+            else if (menu == 5) {
+                wordCRUD.updateItem();
+            }
+
         }
 
     }
