@@ -30,6 +30,8 @@ public class WordManager {
     }
 
     public void start() {
+
+        wordCRUD.LoadFile();
         while(true) {
             int menu = selectMenu();
             if(menu == 0) break;
